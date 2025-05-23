@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Select Quiz Topic</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Select a Quiz Topic</h1>
+    <div class="btn-grid">
+      <button onclick="selectTopic('python')">Python</button>
+      <button onclick="selectTopic('java')">Java</button>
+      <button onclick="selectTopic('dsa')">DSA</button>
+      <button onclick="selectTopic('html')">HTML</button>
+      <button onclick="selectTopic('css')">CSS</button>
+      <button onclick="selectTopic('dbms')">DBMS</button>
+    </div>
+    
+<script src="script.js"></script>
+  </div>
+
+  <script>
+    function selectTopic(topic) {
+      localStorage.setItem("quizTopic", topic);
+      window.location.href = "quiz.html";
+    }
+  </script>
+</body>
+</html>

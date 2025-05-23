@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome to Quiz Zone</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Welcome to an</h1>
+      <h1>Interactive Quiz Zone!</h1>
+    <p>Test your knowledge across various topics and challenge yourself.</p>
+    
+     <a href="topic.html" class="start-button"><button id="start-btn">Let's Get Started 🚀 </button></a>
+<script src="script.js"></script>
+  </div>
+
+  <script>
+    document.getElementById('start-btn').addEventListener('click', () => {
+      window.location.href = 'topic.html';
+    });
+  </script>
+</body>
+</html>
